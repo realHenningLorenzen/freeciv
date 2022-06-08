@@ -12,6 +12,23 @@ grade: devel # must be 'stable' to release into candidate/stable channels
 confinement: devmode # use 'strict' once you have the right plugs and slots
 
 parts:
-  my-part:
-    # See 'snapcraft plugins'
-    plugin: nil
+  freeciv:
+    plugin: autotools
+    source: http://files.freeciv.org/stable/freeciv-3.0.1.tar.xz
+    autotools-configure-parameters:
+      - --disable-dependency-tracking
+      - --enable-fcdb=sqlite3
+      - --enable-ipv6=yes
+      - --enable-patient-connect=yes
+      - --enable-mapimg=magickwand
+      - --enable-json
+      - --enable-client=gtk2,gtk3.22,qt
+      - --enable-gitrev
+      - --enable-debug=no
+      - --enable-sdl-mixer=sdl2
+      - --enable-fcmp=gtk3,qt
+      - --enable-sys-lua
+      - --with-readline
+      - --with-libbz2
+      - --with-liblzma
+      - CXXFLAGS=-Os
