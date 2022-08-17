@@ -19,6 +19,7 @@ parts:
     source: https://github.com/freeciv/freeciv.git
     source-tag: R3_0_3
     autotools-configure-parameters:
+      - --prefix=/usr
       - --enable-shared
       - --disable-static
       - --disable-rpath
@@ -68,9 +69,8 @@ parts:
 apps:
   freeciv-gtk:
     extensions: [gnome-3-38]
-    command: opt/freeciv/bin/freeciv-gtk3.22
+    command: usr/bin/freeciv-gtk3.22
     environment:
-      PATH: "$PATH:/opt/freeciv/bin"
     plugs:
       - audio-playback
       - pulseaudio
@@ -87,8 +87,3 @@ apps:
   #     - pulseaudio
   #     - network-bind
   #     - home
-
-
-layout:
-  /opt/freeciv:
-    bind: $SNAP/opt/freeciv
