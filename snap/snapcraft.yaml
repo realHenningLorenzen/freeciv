@@ -19,7 +19,6 @@ parts:
     source: https://github.com/freeciv/freeciv.git
     source-tag: R3_0_3
     autotools-configure-parameters:
-      - --prefix=/opt/freeciv
       - --disable-dependency-tracking
       - --enable-fcdb=sqlite3
       - --enable-ipv6=yes
