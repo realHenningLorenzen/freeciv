@@ -19,6 +19,9 @@ parts:
     source: https://github.com/freeciv/freeciv.git
     source-tag: R3_0_3
     autotools-configure-parameters:
+      - --enable-shared
+      - --disable-static
+      - --disable-rpath
       - --disable-dependency-tracking
       - --enable-fcdb=sqlite3
       - --enable-ipv6=yes
@@ -33,7 +36,6 @@ parts:
       - --enable-fcmp=gtk3
       # - --enable-fcmp=gtk3,qt
       - --enable-sys-lua
-      - --disable-static
       - --with-readline
       - --with-libbz2
       - --with-liblzma
