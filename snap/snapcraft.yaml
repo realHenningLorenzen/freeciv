@@ -16,7 +16,7 @@ compression: lzo
 parts:
   freeciv:
     plugin: autotools
-    source: http://files.freeciv.org/stable/freeciv-3.0.1.tar.xz
+    source: https://github.com/freeciv/freeciv.git
     autotools-configure-parameters:
       - --prefix=/opt/freeciv
       - --disable-dependency-tracking
