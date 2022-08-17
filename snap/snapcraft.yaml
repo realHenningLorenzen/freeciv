@@ -71,6 +71,7 @@ apps:
     extensions: [gnome-3-38]
     command: usr/bin/freeciv-gtk3.22
     environment:
+      FREECIV_DATA_PATH: $SNAP/usr/share/freeciv/
     plugs:
       - audio-playback
       - pulseaudio
