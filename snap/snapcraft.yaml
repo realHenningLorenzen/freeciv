@@ -39,6 +39,7 @@ parts:
       - --with-readline
       - --with-libbz2
       - --with-liblzma
+      - CXXFLAGS="-Os"
 
     build-packages:
       - libsqlite3-dev
