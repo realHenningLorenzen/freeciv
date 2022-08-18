@@ -65,7 +65,7 @@ parts:
       - liblua5.3-0
 
 apps:
-  freeciv-gtk:
+  freeciv-gtk3:
     extensions: [gnome-3-38]
     command: usr/bin/freeciv-gtk3.22
     environment:
