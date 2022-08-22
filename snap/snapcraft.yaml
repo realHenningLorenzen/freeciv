@@ -1,12 +1,14 @@
 name: freeciv # you probably want to 'snapcraft register <name>'
 base: core20
 version: '3.0.3'
-summary: Single-line elevator pitch for your amazing snap # 79 char long summary
+summary: Freeciv - 'cause civilization should be free!
 description: |
-  This is my-snap's description. You have a paragraph or two to tell the
-  most important story about your snap. Keep it under 100 words though,
-  we live in tweetspace and your description wants to look good in the snap
-  store.
+  Freeciv is a free turn-based multiplayer strategy game,
+  in which each player becomes the leader of a civilization,
+  fighting to obtain the ultimate goal:
+  To become the greatest civilization.
+  Players of Sid Meier's Civilization series should feel at home,
+  since one aim of Freeciv is to have rulesets with compatible rules.
 
 grade: devel # must be 'stable' to release into candidate/stable channels
 confinement: strict
